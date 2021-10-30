@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Сarousel</title>
+</head>
+<body> 
+
+    <main class="main">
+        <section class="additions slide">
+            <div class="additions__container container">
+                <form id="form" class="additions__form" action="#" name="main">
+                    <input id="file" class="additions__file" type="file" name="image" multiple="multiple">
+                    <label class="additions__label" for="file">Добавить фото</label>
+                    <a class="additions__link additions__link--move" href="#">Узнать правила:</a>
+                </form>
+                <div class="additions__move">
+                    <p class="additions__title">Твоя галерея уже готова!</p>
+                    <button id="move" class="additions__button"></button>
+                </div>
+            </div>
+        </section>
+       <section class="carousel slide">
+            <div class="carousel__container container"></div>
+       </section>
+       <div id="popup" class="popup">
+           <div class="popup__body">
+               <div class="popup__content">
+                   <a href="#" class="popup__link popup--close">x</a>
+                   <div class="popup__title">Для корректной роботы галереи, прочитайте правила ниже:</div>
+                   <ul class="popup__list">
+                       <li class="popup__item">Разрешения фото должно быть больше 500 x 600</li>
+                       <li class="popup__item">Количевство фото должно быть больше 2-ух</li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+    </main>
+
+    <script src="script/script.js"> </script>
+</body>
+</html>
+
